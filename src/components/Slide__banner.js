@@ -28,24 +28,21 @@ class Slide__banner extends React.Component {
 
             if(this.state.cur === 7)this.setState({direction:'left'})
             if(this.state.cur === 1)this.setState({direction:'right'})
-        }, 500);
+        }, 1500);
     }
-
     render() {
-
         return (
             <div className={'slide__banner'}>
                 <SimpleImageSlider
                 ref = {this.navRef}
                 width={"100%"}
-                height={260}
+                height={200}
                     images={banners}
                 />
             </div>
         );
     }
 }
-
 
 // class Slide__banner extends React.Component {
 //     render() {
@@ -64,3 +61,4 @@ class Slide__banner extends React.Component {
 // }
 
 export default Slide__banner;
+

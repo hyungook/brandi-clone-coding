@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+:root {
+  /* size */
+  --font-size: 14px;
+  /* color */
+  --color-white: #ffffff;
+  --color-gray: #eee;
+  --color-black: #000000;
+  --color-red: #ff204b;
+}
+.item__wrap {
+  padding: 0 12px;
+
+  /* background-color: #ddd; */
+}
+.item__wrap h1 {
+  padding: 1rem 4px;
+  font-size: 1.2rem;
+  letter-spacing: -0.2px;
+  font-weight: 900;
+}

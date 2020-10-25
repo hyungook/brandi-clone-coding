@@ -58,8 +58,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-size: var(--font-size); */
-  font-size: 1rem;
+  padding: 6px;
+  box-sizing: border-box;
+}
+.searchIcon img {
+  max-width: 38px;
+  width: 64%;
 }
 .searchBox form {
   width: 86%;

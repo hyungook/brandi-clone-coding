@@ -109,7 +109,8 @@ header {
   width: 100%;
   display: flex;
   text-align: center;
-  overflow: hidden;
+  overflow-x: auto;
+  /* overflow: hidden; */
   transition-duration: 0ms;
   transform: translate3d(0px, 0, 0);
   box-sizing: content-box;

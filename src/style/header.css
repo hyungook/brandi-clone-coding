@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   /* size */
   --font-size: 14px;
@@ -22,6 +24,7 @@ header {
   width: 100%;
   /* display: block; */
   display: flex;
+  justify-content: center;
   overflow: hidden;
 }
 .section__top {
@@ -108,14 +111,17 @@ header {
   position: relative;
   width: 100%;
   display: flex;
+  justify-content: left;
+  /* justify-content: center; */
   text-align: center;
   overflow-x: auto;
-  /* overflow: hidden; */
   transition-duration: 0ms;
   transform: translate3d(0px, 0, 0);
   box-sizing: content-box;
-
-  /* background-color: tan; */
+}
+/* 스크롤 기능은 있지만, diplay:none */
+.main__nav::-webkit-scrollbar {
+  display: none;
 }
 
 /*  first child margin-left 조절*/

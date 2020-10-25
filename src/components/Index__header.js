@@ -58,7 +58,7 @@ class Header extends React.Component{
         <section className={'section__bottom'}>
           <ul className={'main__nav'}>
             <li>
-              <a href={'#'}>홈!</a>
+              <a href={'#'}>홈</a>
             </li>
             <li>
               <a href={'#'}>랭킹</a>

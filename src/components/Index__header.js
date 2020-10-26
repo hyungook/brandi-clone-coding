@@ -8,6 +8,7 @@ import faShoppingCart from '../images/icon/shopping_cart.png';
 import searchIcon from '../images/icon/searchIcon.png';
 import LOGO from '../images/logo.png';
 import Banner from '../images/top__banner_mobile.png';
+// import styled from 'styled-components';
 
 class Header extends React.Component{
     render() {
@@ -17,6 +18,7 @@ class Header extends React.Component{
 
       const menus2 = ["홈", "랭킹", "하루배송", "쇼핑몰 · 마켓", "브랜드", "뷰티", "특가", "기획전", "스토어"]
       const main__nav__li = menus2.map((menu) => (<li><a href={'#'}>{menu}</a></li>));
+
 
       return <header>
         <div className={"topBanner"}>

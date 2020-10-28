@@ -1,14 +1,15 @@
 import React from 'react';
 import '../style/reset.css';
 import '../style/header.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faSearch } from '@fortawesome/free-solid-svg-icons'
-// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import faShoppingCart from '../images/icon/shopping_cart.png';
 import searchIcon from '../images/icon/searchIcon.png';
 import LOGO from '../images/logo.png';
 import Banner from '../images/top__banner_mobile.png';
-// import styled from 'styled-components';
+import styled from 'styled-components';
+import { MainHeader, TopBanner, Section__top, Main__logo,
+  SectionBox, SearchIcon, SearchIconImg, SearchBox__form,
+  SearchBtn, ShoppingIcon, ShoppingIcon__a, ShoppingIcon__img,
+  UpperMenu__ul, Section__bottom, Main__nav } from './Index__header__styled.js';
 
 class Header extends React.Component{
     render() {
@@ -20,44 +21,43 @@ class Header extends React.Component{
       const main__nav__li = menus2.map((menu) => (<li><a href={'#'}>{menu}</a></li>));
 
 
-      return <header>
-        <div className={"topBanner"}>
+      return <MainHeader>
+        <TopBanner>
           <img src={Banner} alt={"banner"} />
-        </div>
-        <section className={'section__top'}>
-            <h1 className={"logo"}>
+        </TopBanner>
+        <Section__top>
+            <Main__logo>
               <a href={'#'}>
                 <img src={LOGO} alt={"logo image"}></img>
               </a>
-            </h1>
-            <div className={'searchBox'}>
-                <div className={'searchIcon'}>
-                  {/* <FontAwesomeIcon icon={faSearch}/> */}
-                    <img src={searchIcon} alt={'shopping cart icon'} />
-                </div>
-              <form method={"get"} action={'#'}>
-                <input type={"text"} className={"searchBtn"}>
-                </input>
-              </form>
-            </div>
+            </Main__logo>
+            <SectionBox>
+                <SearchIcon>
+                    <SearchIconImg src={searchIcon} alt={'shopping cart icon'} />
+                </SearchIcon>
+              <SearchBox__form method={"get"} action={'#'}>
+                <SearchBtn type={"text"}>
+                </SearchBtn>
+              </SearchBox__form>
+            </SectionBox>
             <nav className={"upperMenu"}>
-              <div className={'shoppingIcon'}>
-                <a href={"#"}>
-                  <img src={faShoppingCart} alt={'shopping cart icon'} />
-                </a>
-              </div>
-              <ul className={"upperMenu__ul"}>
+              <ShoppingIcon>
+                <ShoppingIcon__a href={"#"}>
+                  <ShoppingIcon__img src={faShoppingCart} alt={'shopping cart icon'} />
+                </ShoppingIcon__a>
+              </ShoppingIcon>
+              <UpperMenu__ul>
                 {upperMenu__li}
-              </ul>
+              </UpperMenu__ul>
             </nav>
-        </section>
-        <section className={'section__bottom'}>
-          <ul className={'main__nav'}>
+        </Section__top>
+        <Section__bottom>
+          <Main__nav className={"main__nav"}>
             {main__nav__li}
-          </ul>
-        </section>
+          </Main__nav>
+        </Section__bottom>
 
-      </header>
+      </MainHeader>
     }
   }
 

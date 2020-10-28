@@ -1,5 +1,11 @@
-// import banner01 from '../images/slideBanner/banner01.png';
+// import src from '*.avif';
+import React from 'react';
 
-export const company = [
-    { url: "" },
+export const item01 = [
+    { img : "",
+    title : "라우드",
+    sale: "20%",
+    price: "45,500",
+    purchase: "12개 구매중", 
+},
 ]

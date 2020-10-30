@@ -19,6 +19,8 @@
   padding: 12px 10px;
   box-sizing: border-box;
   border-top: 1px solid var(--color-gray);
+  z-index: 999;
+  background-color: #fff;
 }
 .nav__ul {
   width: 100%;

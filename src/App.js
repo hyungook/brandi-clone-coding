@@ -11,7 +11,7 @@ class App extends React.Component{
       <Header />
       <SlideBanner />
       <Item__api />
-      <Tab__nav />
+      {/* <Tab__nav /> */}
     </div>
   }
 }

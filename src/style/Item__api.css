@@ -29,6 +29,8 @@
   flex-wrap: wrap;
   overflow: hidden;
   overflow-y: auto;
+
+  margin-bottom: 60px;
 }
 .item__section__ul li {
   position: relative;
@@ -38,6 +40,11 @@
 
   /* background-color: #ccc; */
 }
+.item__section__ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .item__img {
   width: 100%;
   height: 220px;
@@ -61,14 +68,22 @@
   margin-bottom: 4px;
 }
 .item__sale {
-  float: left;
+  display: inline-block;
   font-weight: 700;
   color: var(--color-red);
   margin-right: 4px;
 }
 .item__price {
+  display: inline-block;
   font-weight: 700;
+  margin-right: 6px;
   color: #000;
+}
+.item__costPrice {
+  display: inline-block;
+  font-size: 14px;
+  color: #757575;
+  text-decoration: line-through;
 }
 .item__purchase {
   margin-top: 8px;

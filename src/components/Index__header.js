@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/reset.css';
-import '../style/header.css';
+// import '../style/header.css';
 import faShoppingCart from '../images/icon/shopping_cart.png';
 import searchIcon from '../images/icon/searchIcon.png';
 import LOGO from '../images/logo.png';
@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import { MainHeader, TopBanner, Section__top, Main__logo,
   SectionBox, SearchIcon, SearchIconImg, SearchBox__form,
   SearchBtn, ShoppingIcon, ShoppingIcon__a, ShoppingIcon__img,
-  UpperMenu__ul, Section__bottom, Main__nav } from './Index__header__styled.js';
+  UpperMenu__ul, Section__bottom, Main__nav, Main__nav__li, Main__nav__li__a  } from './Index__header__styled.js';
 
 class Header extends React.Component{
     render() {
@@ -18,7 +18,7 @@ class Header extends React.Component{
       const upperMenu__li = menus1.map((menu) => (<li><a href={'#'}>{menu}</a></li>));
 
       const menus2 = ["홈", "랭킹", "하루배송", "쇼핑몰 · 마켓", "브랜드", "뷰티", "특가", "기획전", "스토어"]
-      const main__nav__li = menus2.map((menu) => (<li><a href={'#'}>{menu}</a></li>));
+      const main__nav__li = menus2.map((menu) => (<Main__nav__li><Main__nav__li__a  href={'#'}>{menu}</Main__nav__li__a ></Main__nav__li>));
 
 
       return <MainHeader>

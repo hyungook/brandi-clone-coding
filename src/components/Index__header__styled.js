@@ -104,4 +104,52 @@ export const Main__nav = styled.ul`
     transition-duration: 0ms;
     transform: translate3d(0px, 0, 0);
     box-sizing: content-box;
+
+    ::-webkit-scrollbar {
+        display: none;
+      }
+`;
+
+export const Main__nav__li = styled.li`
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 28px;
+    box-sizing: border-box;
+
+    ::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        display: inline-block;
+        background: var(--color-red);
+        transition: all 0.3s;
+      }
+
+    :hover::after {
+        width: 100%;
+        background: var(--color-red);
+        transition: all 0.3s;
+    }
+
+    :focus::after {
+        width: 100%;
+        background: var(--color-red);
+        transition: all 0.3s;
+    }
+
+`;
+export const Main__nav__li__a = styled.li`
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: var(--color-black);
+    text-decoration: none;
+
+    margin: auto 0;
 `;

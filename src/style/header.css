@@ -120,11 +120,11 @@
 } */
 
 /* 스크롤 기능은 있지만, diplay:none */
-.main__nav::-webkit-scrollbar {
+/* .main__nav::-webkit-scrollbar {
   display: none;
-}
+} */
 
-.main__nav li {
+/* .main__nav li {
   width: auto;
   height: 50px;
   display: flex;
@@ -134,14 +134,9 @@
   flex-direction: column;
   margin-right: 28px;
   box-sizing: border-box;
-
-  /* background-color: steelblue; */
-}
-/* .main__nav li:hover,
-.main__nav li:focus {
-  border-bottom: 3px solid var(--color-red);
 } */
-.main__nav li::after {
+
+/* .main__nav li::after {
   content: "";
   width: 0;
   height: 3px;
@@ -149,16 +144,17 @@
   background: var(--color-red);
   transition: all 0.3s;
 }
+
 .main__nav li:hover::after,
 .main__nav li:focus::after {
   width: 100%;
   background: var(--color-red);
   transition: all 0.3s;
-}
+} */
 
 /* styled components 사용시 :hover와 ::afer, 그리고 :root,var 사용 여부 */
 
-.main__nav li a {
+/* .main__nav li a {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: -0.05em;
@@ -167,7 +163,7 @@
   text-decoration: none;
 
   margin: auto 0;
-}
+} */
 
 /* 따로 css를 작업하는 것이 좋을까?
 아니면 스타일드 컴포넌츠를 사용해야 좋을까 */

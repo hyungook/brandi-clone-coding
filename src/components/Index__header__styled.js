@@ -189,14 +189,14 @@ export const Main__nav = styled.ul`
       }
 
       @media only screen and (min-width: 768px) {
-          max-width: 1300px;
+        max-width: 1100px;
         justify-content: space-around;
       }
 `;
 
 export const Main__nav__li = styled.li`
     width: auto;
-    height: 50px;
+    height: 60px;
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -206,7 +206,7 @@ export const Main__nav__li = styled.li`
     box-sizing: border-box;
 
     :hover {
-        color: var(--color-red);
+        color: #FF204B;
         cursor: pointer;
     }
 
@@ -215,25 +215,24 @@ export const Main__nav__li = styled.li`
         width: 0;
         height: 3px;
         display: inline-block;
-        background: var(--color-red);
+        background: #FF204B;
         transition: all 0.3s;
       }
 
     :hover::after {
         width: 100%;
-        background: var(--color-red);
+        background: color: #FF204B;
         transition: all 0.3s;
     }
 
     :focus::after {
         width: 100%;
-        background: var(--color-red);
+        background: #FF204B;
         transition: all 0.3s;
     }
     
     @media only screen and (min-width: 768px) {
         min-width: 11.1%;
-        padding: 0 40px;
         margin-right: 0;
     }
 
@@ -249,11 +248,18 @@ export const Main__nav__li__a = styled.a`
     margin: auto 0;
 
     :hover {
-        color: var(--color-red);
+        color: #FF204B;
     }
 
     @media only screen and (min-width: 768px) {
+        width: 100%;
+        height: 100%;
         font-size: 1rem;
+        padding: 10px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
 
 `;

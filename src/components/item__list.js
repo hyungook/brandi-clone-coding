@@ -76,7 +76,6 @@ export const item = [
         price: "14,310",
         costPrice: "15,900",
         purchase: ""},
-
     { 
         url : "#", 
         img : "원더원더.jpg",
@@ -86,7 +85,27 @@ export const item = [
         sale: "",
         price: "7,400",
         costPrice: "",
-        purchase: "1,323"}
+        purchase: "1,323"},
+    { 
+        url : "#", 
+        img : "더뮤즈.jpg",
+        alt : "thumnail image",
+        brand : "더뮤즈",
+        title : "[국내생산]데일리 루즈 크롭 긴팔 4컬러_더뮤즈",
+        sale: "",
+        price: "9,900",
+        costPrice: "",
+        purchase: "631"},
+    { 
+        url : "#", 
+        img : "비커밍27.jpg",
+        alt : "thumnail image",
+        brand : "비커밍27",
+        title : "V 넥 플라워 롱 원피스 _비커밍27",
+        sale: "10%",
+        price: "20,660",
+        costPrice: "22,950",
+        purchase: "454"}
 ]
 
 // export const item = [{1:1},{1:2},{1:3},{1:4}]

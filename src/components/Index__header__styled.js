@@ -14,6 +14,12 @@ export const TopBanner = styled.div`
     display: flex;
     justify-content: center;
     overflow: hidden;
+    object-fit: cover;
+
+    @media only screen and (min-width: 768px) {
+        max-height: 60px;
+        object-fit: cover;
+      }
 `;
 export const Section__top = styled.section`
     width: 100%;
@@ -21,10 +27,11 @@ export const Section__top = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
     @media only screen and (min-width: 768px) {
         max-width: 1300px;
-        // padding: 20px 100px;
+        padding: 38px 100px;
       }
 `;
 export const Main__logo = styled.h1`
@@ -42,6 +49,12 @@ export const SectionBox = styled.div`
     align-items: center;
     border-radius: 4rem;
     background-color: #eeeeee;
+
+    @media only screen and (min-width: 768px) {
+        width: 44%;
+      }
+
+
 `;
 export const SearchIcon = styled.div`
     width: 38px;
@@ -51,10 +64,21 @@ export const SearchIcon = styled.div`
     align-items: center;
     padding: 6px;
     box-sizing: border-box;
+
+    @media only screen and (min-width: 768px) {
+        width: 12%;
+        height: 40px;
+      }
+
 `;
 export const SearchIconImg = styled.img`
     max-width: 38px;
     width: 64%;
+
+    @media only screen and (min-width: 768px) {
+        // width: 80%;
+        width: 20px;
+      }
 `;
 export const SearchBox__form = styled.form`
     width: 86%;
@@ -62,6 +86,12 @@ export const SearchBox__form = styled.form`
     position: relative;
     display: flex;
     border-radius: 4rem;
+
+    @media only screen and (min-width: 768px) {
+        width: 88%;
+        height: 40px;
+      }
+
 `;
 export const SearchBtn = styled.input`
     width: 100%;

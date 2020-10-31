@@ -2,7 +2,7 @@
 * {
   margin: 0;
 }
-.image-slider-bullets {
+/* .image-slider-bullets {
   display: inline-block;
   margin: 0px 3px;
   padding: 0px;
@@ -16,17 +16,58 @@
   height: 8px !important;
 }
 .image-slider > div > button > img {
-  /* display: none; */
 }
-/* .image-slider > div {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-} */
 .image-slider > div > div:last-child {
   position: relative;
-  /* background-color: black; */
   margin: 0 auto !important;
   left: 50% !important;
   transform: translate(-50%, 0);
+} */
+
+.alice-carousel {
+  position: relative !important;
+}
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  display: none !important;
+}
+.alice-carousel__dots {
+  margin: 0 auto !important;
+  position: absolute !important;
+  bottom: 10px !important;
+  left: 50% !important;
+  transform: translate(-50%, 0);
+}
+.alice-carousel__dots-item {
+  margin-right: 8px !important;
+  background-color: #222222 !important;
+}
+.alice-carousel__dots-item:last-child {
+  margin-right: 0 !important;
+}
+.alice-carousel__dots-item:hover,
+.alice-carousel__dots-item.__active {
+  background-color: #ff204b !important;
+}
+
+.sliderimg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .alice-carousel {
+    margin-bottom: 50px !important;
+  }
+  .sliderimg {
+    height: 500px;
+  }
+
+  .alice-carousel__dots {
+    position: relative !important;
+    margin: 0 !important;
+    position: absolute !important;
+    bottom: -40px !important;
+  }
 }

@@ -8,14 +8,14 @@ import Banner from '../images/top__banner_mobile.png';
 import styled from 'styled-components';
 import { MainHeader, TopBanner, Section__top, Main__logo,
   SectionBox, SearchIcon, SearchIconImg, SearchBox__form,
-  SearchBtn, ShoppingIcon, ShoppingIcon__a, ShoppingIcon__img,
-  UpperMenu__ul, Section__bottom, Main__nav, Main__nav__li, Main__nav__li__a  } from './Index__header__styled.js';
+  SearchBtn, ShoppingIcon, ShoppingIcon__a, ShoppingIcon__img, UpperMenu,
+  UpperMenu__ul, UpperMenu__ul__li, UpperMenu__ul__li__a, Section__bottom, Main__nav, Main__nav__li, Main__nav__li__a  } from './Index__header__styled.js';
 
 class Header extends React.Component{
     render() {
 
       const menus1 = ["찜", "장바구니", "마이페이지", "로그인", "입점문의"]
-      const upperMenu__li = menus1.map((menu) => (<li><a href={'#'}>{menu}</a></li>));
+      const upperMenu__li = menus1.map((menu) => (<UpperMenu__ul__li><UpperMenu__ul__li__a href={'#'}>{menu}</UpperMenu__ul__li__a></UpperMenu__ul__li>));
 
       const menus2 = ["홈", "랭킹", "하루배송", "쇼핑몰 · 마켓", "브랜드", "뷰티", "특가", "기획전", "스토어"]
       const main__nav__li = menus2.map((menu) => (<Main__nav__li><Main__nav__li__a  href={'#'}>{menu}</Main__nav__li__a ></Main__nav__li>));
@@ -40,7 +40,8 @@ class Header extends React.Component{
                 </SearchBtn>
               </SearchBox__form>
             </SectionBox>
-            <nav className={"upperMenu"}>
+
+            <UpperMenu>
               <ShoppingIcon>
                 <ShoppingIcon__a href={"#"}>
                   <ShoppingIcon__img src={faShoppingCart} alt={'shopping cart icon'} />
@@ -49,7 +50,8 @@ class Header extends React.Component{
               <UpperMenu__ul>
                 {upperMenu__li}
               </UpperMenu__ul>
-            </nav>
+            </UpperMenu>
+
         </Section__top>
         <Section__bottom>
           <Main__nav className={"main__nav"}>

@@ -4,7 +4,9 @@ import '../style/Item__api.css';
 // import styled from 'styled-components';
 import { item } from './item__list';
 
-// import AA from '../images/item_thumnail/버튼나인.jpg';
+
+// 정적파일 경로에 접근하는 시스템 변수 
+const url = process.env.PUBLIC_URL + '/assets/item_thumnail/'
 
 class Item__api extends React.Component {
     render() {
@@ -17,7 +19,7 @@ class Item__api extends React.Component {
                 {item.map((item, idx) => {
                     return <li><a href={item["url"]} target={"blank"}>
                         <div className={"item__img"}>
-                            <img src={item["img"]} alt={item.alt}></img>
+                            <img src={`${url+item["img"]}`} alt={item.alt}></img>
                         </div>
                         <div className={"item__brand"}>{item["brand"]}</div>
                         <div className={"item__title"}>{item["title"]}</div>

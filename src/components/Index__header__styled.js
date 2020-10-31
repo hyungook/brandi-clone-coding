@@ -21,7 +21,11 @@ export const Section__top = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #eee;
+
+    @media only screen and (min-width: 768px) {
+        max-width: 1300px;
+        // padding: 20px 100px;
+      }
 `;
 export const Main__logo = styled.h1`
     max-width: 150px;
@@ -82,17 +86,62 @@ export const ShoppingIcon__a  = styled.a`
 `;
 export const ShoppingIcon__img = styled.img`
     text-align: center;
+
+    @media only screen and (min-width: 768px) {
+        display: none;
+      }
 `;
+
+export const UpperMenu = styled.nav`
+    display: flex;
+    justify-content: left;
+    align-items: center;
+`;
+
 export const UpperMenu__ul = styled.ul`
     display: none;
+
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        text-decoration: none;
+        // background-color: #ddd;
+      }
 `;
+
+export const UpperMenu__ul__li = styled.li`
+        text-decoration: none;
+        // margin-right: 8px;
+
+        ::after {
+            float:left;
+            display: inline-block;
+            content: " ㅣ ";
+        }
+
+        :first-child::after {
+            content: "";
+        }
+`;
+
+export const UpperMenu__ul__li__a = styled.a`
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+`;
+
 export const Section__bottom = styled.section`
     width: 100%;
     padding: 0 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 1px solid #eee;
     border-bottom: 1px solid #ddd;
+
+
+    @media only screen and (min-width: 768px) {
+      justify-content: center;
+    }
 `;
 export const Main__nav = styled.ul`
     position: relative;
@@ -108,6 +157,11 @@ export const Main__nav = styled.ul`
     ::-webkit-scrollbar {
         display: none;
       }
+
+      @media only screen and (min-width: 768px) {
+          max-width: 1300px;
+        justify-content: space-around;
+      }
 `;
 
 export const Main__nav__li = styled.li`
@@ -120,6 +174,11 @@ export const Main__nav__li = styled.li`
     flex-direction: column;
     margin-right: 28px;
     box-sizing: border-box;
+
+    :hover {
+        color: var(--color-red);
+        cursor: pointer;
+    }
 
     ::after {
         content: "";
@@ -141,9 +200,15 @@ export const Main__nav__li = styled.li`
         background: var(--color-red);
         transition: all 0.3s;
     }
+    
+    @media only screen and (min-width: 768px) {
+        min-width: 11.1%;
+        padding: 0 40px;
+        margin-right: 0;
+    }
 
 `;
-export const Main__nav__li__a = styled.li`
+export const Main__nav__li__a = styled.a`
     font-size: 13px;
     font-weight: 700;
     letter-spacing: -0.05em;
@@ -152,4 +217,13 @@ export const Main__nav__li__a = styled.li`
     text-decoration: none;
 
     margin: auto 0;
+
+    :hover {
+        color: var(--color-red);
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 1rem;
+    }
+
 `;

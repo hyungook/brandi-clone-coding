@@ -101,6 +101,10 @@
   color: #757575;
 }
 
+.banner {
+  margin-bottom: 80px;
+}
+
 @media screen and (min-width: 768px) {
   .item__wrap {
     display: flex;

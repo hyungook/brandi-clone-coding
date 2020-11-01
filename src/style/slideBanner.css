@@ -32,6 +32,7 @@
   display: none !important;
 }
 .alice-carousel__dots {
+  width: 100% !important;
   margin: 0 auto !important;
   position: absolute !important;
   bottom: 10px !important;
@@ -39,7 +40,7 @@
   transform: translate(-50%, 0);
 }
 .alice-carousel__dots-item {
-  margin-right: 8px !important;
+  margin-right: 6px !important;
   background-color: #222222 !important;
 }
 .alice-carousel__dots-item:last-child {
@@ -69,5 +70,8 @@
     margin: 0 !important;
     position: absolute !important;
     bottom: -40px !important;
+  }
+  .alice-carousel__dots-item {
+    margin-right: 8px !important;
   }
 }

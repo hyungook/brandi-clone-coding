@@ -1,17 +1,23 @@
-import banner01 from '../images/slideBanner/banner01.png';
-import banner02 from '../images/slideBanner/banner02.png';
-import banner03 from '../images/slideBanner/banner03.png';
-import banner04 from '../images/slideBanner/banner04.png';
-import banner05 from '../images/slideBanner/banner05.png';
-import banner06 from '../images/slideBanner/banner06.png';
-import banner07 from '../images/slideBanner/banner07.png';
-
 export const banners = [
-    { url: banner01 },
-    { url: banner02},
-    { url: banner03 },
-    { url: banner04 },
-    { url: banner05 },
-    { url: banner06 },
-    { url: banner07 },
+    { img: "banner01.png" },
+    { img: "banner02.png" },
+    { img: "banner03.png" },
+    { img: "banner04.png" },
+    { img: "banner05.png" },
+    { img: "banner06.png" },
+    { img: "banner07.png" },
+    { img: "banner08.png" },
+    { img: "banner09.png" },
+    { img: "banner10.png" },
+    { img: "banner11.png" },
+    { img: "banner12.png" },
+    { img: "banner13.png" },
+    { img: "banner14.png" },
+    { img: "banner15.png" },
+    { img: "banner16.png" },
+    { img: "banner17.png" },
+    { img: "banner18.png" },
+    { img: "banner19.png" },
+    { img: "banner20.png" },
+    { img: "banner21.png" },
 ]

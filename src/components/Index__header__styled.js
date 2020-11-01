@@ -11,23 +11,31 @@ export const MainHeader = styled.header`
 `;
 export const TopBanner = styled.div`
     width: 100%;
-    display: flex;
-    justify-content: center;
+    display: block;
     overflow: hidden;
+    box-sizing: border-box;
+    @media only screen and (min-width: 768px) {
+        // max-height: 60px;
+      }
+`;
+
+export const TopBanner__img = styled.img`
+    width: 100%;
+    height: 56px;
     object-fit: cover;
 
     @media only screen and (min-width: 768px) {
-        max-height: 60px;
-        object-fit: cover;
+        width: 100%;
+        height: auto;
       }
 `;
+
 export const Section__top = styled.section`
     width: 100%;
     padding: 12px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 
     @media only screen and (min-width: 768px) {
         max-width: 1300px;

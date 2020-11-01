@@ -1,92 +1,75 @@
 import React from 'react';
 import '../style/reset.css';
 import '../style/slideBanner.css';
-import SimpleImageSlider from "react-simple-image-slider";
+// import SimpleImageSlider from "react-simple-image-slider";
 import { banners } from "./slide__banner__src";
 
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import image1 from '../images/slideBanner/banner01.png';
-import image2 from '../images/slideBanner/banner02.png';
-import image3 from '../images/slideBanner/banner03.png';
-import image4 from '../images/slideBanner/banner04.png';
-import image5 from '../images/slideBanner/banner05.png';
+
+const url = process.env.PUBLIC_URL + '/assets/slideBanner/';
 
 class Slide__banner extends React.Component {
 
-//     navRef = React.createRef();
-//     constructor(props){
-//         super(props)
-//         this.state = {
-//             cur:0, direction:'right'
-//         }
-//     }
-
-//     componentDidMount(){
-//         console.log(this.navRef.current)
-//         setInterval(() => {
-
-//             this.state.direction === 'right' ? 
-//             this.navRef.current.onClickNav(true):
-//             this.navRef.current.onClickNav(false)
-
-//             this.state.direction === 'right'? 
-//             this.setState({cur: this.state.cur+1}):
-//             this.setState({cur: this.state.cur-1})
-
-//             if(this.state.cur === 7)this.setState({direction:'left'})
-//             if(this.state.cur === 1)this.setState({direction:'right'})
-//         }, 1500);
-//     }
-//     render() {
-//         return (
-//             <div className={'slide__banner'}>
-//                 <SimpleImageSlider
-//                 ref = {this.navRef}
-//                 width={"100%"}
-//                 height={200}
-//                     images={banners}
-//                 />
-//             </div>
-//         );
-//     }
-// }
+// 리액트 상태 변화를 통해 rerender 할 수 있도록 수정
+// Api 출처 : https://medium.com/how-to-react/create-beautiful-image-sliders-carousels-in-react-using-react-alice-carousel-395d8ae9310c
+// Api : https://www.npmjs.com/package/react-alice-carousel
 
 
-// =================================>> ==========
+constructor(props){
+    super(props)
+    this.state = {
+        cnt : 0
+    }
+}
 
-// class Slide__banner extends React.Component {
-//     render() {
-//         return <div className={'slide__banner'}>
-//             <nav className={'banner__wrap'}>
-//                 <ul className={'banner__wrap__ul'}>
-//                     <li>
-//                         <a href={'#'}>
-//                             <img src={Banner} alt={'banner image'} />
-//                         </a>
-//                     </li>
-//                 </ul>
-//             </nav>
-//         </div>
-//     }
+    renew = cnt => {
+        if(cnt === 20){
+            console.log('!')
+            this.setState({
+                cnt: this.state.cnt + 1
+            })
+        }
+    }
+    
 
-// =================================>> ==========
+    // renew = cnt => {
+    //     if(cnt === 20){
+    //         setTimeout(function() {
+    //             console.log('!')
+    //             console.log(cnt)
+    //             this.setState({
+    //                 cnt: this.state.cnt + 1
+    //             })
+    //           }, 1500);       
+    //     }
+    // }
 
+
+    // renew = cnt => {
+    //     setTimeout(function() {
+    //         if(cnt === 20){
+    //                 console.log('!')
+    //                 console.log(cnt)
+    //                 this.setState({
+    //                     cnt: this.state.cnt + 1
+    //                 })
+    //             }
+    //     }, 1500);       
+    // }
 
     render() {
+        console.log(this.state.cnt)
         return (
-            <AliceCarousel autoPlay autoPlayInterval="2000">
-                <img src={image1} className="sliderimg"/>
-                <img src={image2} className="sliderimg"/>
-                <img src={image3} className="sliderimg"/>
-                <img src={image4} className="sliderimg"/>
-                <img src={image5} className="sliderimg"/>
+
+            <AliceCarousel key={`${this.state.cnt}`} onSlideChanged={(e)=>{this.renew(e.item)}} autoPlay autoPlayInterval="1500" >
+                {banners.map((banners, idx) => {
+                    return <img src={`${url+banners["img"]}`} className="sliderimg" alt={`${this.state.cnt}`}/>
+                })}
             </AliceCarousel>
         )
 }
-
-
 
 
 

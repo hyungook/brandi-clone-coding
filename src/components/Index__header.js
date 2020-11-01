@@ -7,7 +7,7 @@ import LOGO from '../images/logo.png';
 import Banner_mobile from '../images/top__banner_mobile.png';
 import Banner from '../images/top__banner.png';
 import styled from 'styled-components';
-import { MainHeader, TopBanner, Section__top, Main__logo,
+import { MainHeader, TopBanner, TopBanner__img, Section__top, Main__logo,
   SectionBox, SearchIcon, SearchIconImg, SearchBox__form,
   SearchBtn, ShoppingIcon, ShoppingIcon__a, ShoppingIcon__img, UpperMenu,
   UpperMenu__ul, UpperMenu__ul__li, UpperMenu__ul__li__a, Section__bottom, Main__nav, Main__nav__li, Main__nav__li__a  } from './Index__header__styled.js';
@@ -64,6 +64,7 @@ class Header extends React.Component{
           {/* <img src={`${url+topBanner}`} alt={"banner"} className={"topBanner"} /> */}
           {/* <img src={Banner_mobile} alt={"banner"} className={"topBanner"} /> */}
           {/* <img src={Banner} alt={"banner"} className={"topBanner"} /> */}
+          <TopBanner__img src={Banner} alt={"banner"} className={"topBanner"} alt={"top banner"}/>
         </TopBanner>
         <Section__top>
             <Main__logo>

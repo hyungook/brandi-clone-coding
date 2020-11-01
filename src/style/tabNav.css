@@ -54,3 +54,9 @@
 .on {
   color: var(--color-red);
 }
+
+@media screen and (min-width: 768px) {
+  .nav__wrap {
+    display: none;
+  }
+}

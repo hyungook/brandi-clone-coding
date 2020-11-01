@@ -21,7 +21,7 @@ export const TopBanner = styled.div`
 
 export const TopBanner__img = styled.img`
     width: 100%;
-    height: 56px;
+    height: 50px;
     object-fit: cover;
 
     @media only screen and (min-width: 768px) {

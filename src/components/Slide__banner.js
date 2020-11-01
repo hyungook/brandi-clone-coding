@@ -45,7 +45,7 @@ constructor(props){
     //           }, 1500);       
     //     }
     // }
-
+    
 
     // renew = cnt => {
     //     setTimeout(function() {

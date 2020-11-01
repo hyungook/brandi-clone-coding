@@ -85,7 +85,7 @@ export const item = [
         sale: "",
         price: "7,400",
         costPrice: "",
-        purchase: "1,323"},
+        purchase: "1,323개 구매중"},
     { 
         url : "#", 
         img : "더뮤즈.jpg",
@@ -95,7 +95,7 @@ export const item = [
         sale: "",
         price: "9,900",
         costPrice: "",
-        purchase: "631"},
+        purchase: "631개 구매중"},
     { 
         url : "#", 
         img : "비커밍27.jpg",
@@ -105,7 +105,7 @@ export const item = [
         sale: "10%",
         price: "20,660",
         costPrice: "22,950",
-        purchase: "454"}
+        purchase: "454개 구매중"}
 ]
 
 // export const item = [{1:1},{1:2},{1:3},{1:4}]

@@ -10,46 +10,10 @@ import styled from 'styled-components';
 import { MainHeader, TopBanner, TopBanner__img, Section__top, Main__logo,
   SectionBox, SearchIcon, SearchIconImg, SearchBox__form,
   SearchBtn, ShoppingIcon, ShoppingIcon__a, ShoppingIcon__img, UpperMenu,
-  UpperMenu__ul, UpperMenu__ul__li, UpperMenu__ul__li__a, Section__bottom, Main__nav, Main__nav__li, Main__nav__li__a  } from './Index__header__styled.js';
+  UpperMenu__ul, UpperMenu__ul__li, UpperMenu__ul__li__a,
+  Section__bottom, Main__nav, Main__nav__li, Main__nav__li__a  } from './Index__header__styled.js';
 
-
-  // let topBanner;
-  // const url = process.env.PUBLIC_URL + '/assets/';
-  // let windowInnerWindth = window.innerWidth;
-
-  // window.addEventListener('resize', () => {
-  //   console.log(windowInnerWindth);
-  //     if(windowInnerWindth >= 768) {
-  //       let topBanner = 'top__banner.png';
-  //       return topBanner;
-  //       console.log(topBanner);
-  //     } else {
-  //       let topBanner = 'top__banner_mobile.png';
-  //       return topBanner;
-  //       console.log(topBanner);
-  //     }
-  // })
-
-// let bannerImg = document.querySelector('.topBanner');
-//   window.addEventListener('resize', () => {
-//     // bannerImg.src = `${Banner}`;
-//   })
-
-
-// var mql = window.matchMedia("screen and (max-width: 768px)");
-// window.addEventListener('load', () => {
-//   if (mql.matches) {
-//       console.log("화면의 너비가 768px 보다 작습니다.");
-//       // bannerImg.src = Banner_mobile;
-//   } else {
-//       console.log("화면의 너비가 768px 보다 큽니다.");
-//       // bannerImg.src = Banner;
-//   }
-// })
       
-
-
-
 class Header extends React.Component{
     render() {
 

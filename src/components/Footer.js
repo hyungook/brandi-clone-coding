@@ -9,9 +9,36 @@ class Footer extends React.Component {
 
     render() {
         return<footer className={"footer"}>
-            <div className={"footer__section footer__1"}>
+            <div className={"footer__section footer__1 hidden"}>
                 <strong>브랜디 고객센터</strong>
                 <p>㈜브랜디는 중개서비스 제공 또는 통신판매중개시스템의 제공자로서 상품의 주문 및 배송 환불 등에 대해서는 각 판매자에게 확인하셔야 빠른 답변을 받으실 수 있습니다.</p>
+            </div>
+            <div className={"footer__section footer__1"}>
+                <div className={"footer__1__left"}>
+                    <strong>고객센터 1566-6575</strong>
+                    <p>영업시간 : AM 10:00 ~ PM 17:00 (주말 및 공휴일 휴무)</p>
+                    <p>점심시간 : PM 12:30 ~ PM 13:30</p>
+                </div>
+                <div className={"footer__1__right"}>
+                    <ul>
+                        <li>
+                            <img src={""} alt={"icon"}></img>
+                            <p>자주 묻는 질문</p>
+                        </li>
+                        <li>
+                            <img src={""} alt={"icon"}></img>
+                            <p>카톡 플러스 친구</p>
+                        </li>
+                        <li>
+                            <img src={""} alt={"icon"}></img>
+                            <p>페이스북</p>
+                        </li>
+                        <li>
+                            <img src={""} alt={"icon"}></img>
+                            <p>인스타그램</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div className={"footer__section footer__2"}>
                 <p>회사명 : ㈜브랜디 | 대표이사 : 서정민</p>

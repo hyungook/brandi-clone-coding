@@ -39,7 +39,12 @@ export const Section__top = styled.section`
 
     @media only screen and (min-width: 768px) {
         max-width: 1300px;
-        padding: 38px 100px;
+        padding: 38px 20px;
+      }
+
+      @media only screen and (min-width: 1024px) {
+        max-width: 1300px;
+        padding: 38px 80px;
       }
 `;
 export const Main__logo = styled.h1`
@@ -59,7 +64,7 @@ export const SectionBox = styled.div`
     background-color: #eeeeee;
 
     @media only screen and (min-width: 768px) {
-        width: 44%;
+        width: 42%;
       }
 
 
@@ -117,6 +122,10 @@ export const ShoppingIcon = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
+    
+    @media only screen and (min-width: 768px) {
+        display: none;
+    }
 `;
 export const ShoppingIcon__a  = styled.a`
     width: 100%;
@@ -124,10 +133,6 @@ export const ShoppingIcon__a  = styled.a`
 `;
 export const ShoppingIcon__img = styled.img`
     text-align: center;
-
-    @media only screen and (min-width: 768px) {
-        display: none;
-      }
 `;
 
 export const UpperMenu = styled.nav`
@@ -148,7 +153,6 @@ export const UpperMenu__ul = styled.ul`
 
 export const UpperMenu__ul__li = styled.li`
         text-decoration: none;
-        // margin-right: 8px;
 
         ::after {
             float:left;
@@ -165,6 +169,7 @@ export const UpperMenu__ul__li__a = styled.a`
         text-decoration: none;
         color: #000;
         font-size: 14px;
+        letter-spacing: -0.5px
 `;
 
 export const Section__bottom = styled.section`
@@ -197,8 +202,11 @@ export const Main__nav = styled.ul`
       }
 
       @media only screen and (min-width: 768px) {
-        max-width: 1100px;
+
+        max-width: 1000px;
         justify-content: space-around;
+
+        overflow-x: visible;
       }
 `;
 
@@ -253,8 +261,6 @@ export const Main__nav__li__a = styled.a`
     color: var(--color-black);
     text-decoration: none;
 
-    margin: auto 0;
-
     :hover {
         color: #FF204B;
     }
@@ -263,11 +269,14 @@ export const Main__nav__li__a = styled.a`
         width: 100%;
         height: 100%;
         font-size: 1rem;
-        padding: 10px 40px;
+        padding: 10px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 10px 30px;
+      }
 
 `;

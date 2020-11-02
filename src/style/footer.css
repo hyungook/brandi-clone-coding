@@ -4,6 +4,7 @@
   background-color: #1e1e1e;
   color: #fff;
   padding: 20px 14px 160px 14px;
+  letter-spacing: -0.25px;
 }
 .footer__section {
   padding: 20px 0;
@@ -58,12 +59,109 @@
 .snsIcon {
   max-width: 14px;
 }
-.hidden {
+
+.footer__web {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 20px 14px 20px 14px;
+    padding: 20px 40px;
+  }
+  .footer__mobile {
+    display: none;
+  }
+  .footer__web {
+    display: block;
+  }
+  .footer__1 {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .footer__1__left strong {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .footer__1__left:last-child {
+    margin-bottom: 6px;
+  }
+  .footer__1__right {
+    height: 100%;
+  }
+  .footer__1__right ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer__1__right ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .footer__1__right ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer__2 {
+    padding: 20px 0 40px 0;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: none;
+    flex-wrap: wrap;
+  }
+  .link__company {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .link__company li {
+  }
+  .link__company li::after {
+    content: " | ";
+    margin: 0 10px;
+  }
+  .link__company li:last-child::after {
+    content: "";
+  }
+  .link__company li a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer__2__right ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__2__right ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .footer__2__right ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .icon {
+    font-size: 1.2rem;
+    margin-right: 6px;
   }
 }

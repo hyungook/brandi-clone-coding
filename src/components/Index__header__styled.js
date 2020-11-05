@@ -202,16 +202,16 @@ export const Main__nav = styled.ul`
       }
 
       @media only screen and (min-width: 768px) {
-
         max-width: 1000px;
         justify-content: space-around;
-
         overflow-x: visible;
       }
 `;
 
 export const Main__nav__li = styled.li`
+    position: relative;
     width: auto;
+    padding: 0 10px;
     height: 60px;
     display: flex;
     flex-shrink: 0;
@@ -231,17 +231,25 @@ export const Main__nav__li = styled.li`
         width: 0;
         height: 3px;
         display: inline-block;
+        
+        position:absolute;
+        bottom:0;
+
         background: #FF204B;
         transition: all 0.3s;
       }
 
     :hover::after {
+        position:absolute;
+
         width: 100%;
         background: color: #FF204B;
         transition: all 0.3s;
     }
 
     :focus::after {
+        position:absolute;
+
         width: 100%;
         background: #FF204B;
         transition: all 0.3s;

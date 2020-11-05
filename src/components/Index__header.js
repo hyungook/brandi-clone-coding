@@ -11,7 +11,7 @@ import { MainHeader, TopBanner, TopBanner__img, Section__top, Main__logo,
   SectionBox, SearchIcon, SearchIconImg, SearchBox__form,
   SearchBtn, ShoppingIcon, ShoppingIcon__a, ShoppingIcon__img, UpperMenu,
   UpperMenu__ul, UpperMenu__ul__li, UpperMenu__ul__li__a,
-  Section__bottom, Main__nav, Main__nav__li, Main__nav__li__a  } from './Index__header__styled.js';
+  Section__bottom, Main__nav, Main__nav__li, Main__nav__li__a } from './Index__header__styled.js';
 
       
 class Header extends React.Component{

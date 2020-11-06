@@ -65,18 +65,13 @@ export const Item__li__a = styled.a`
 export const Item__img = styled.div`
     width: 100%;
     height: 220px;
-    border-radius: 14px;
+    border-radius: 10px;
     margin-bottom: 10px;
     overflow: hidden;
     background-color: #ddd;
 
     @media only screen and (min-width: 768px) {
-        width: 100%;
         height: 260px;
-        border-radius: 14px;
-        margin-bottom: 10px;
-        overflow: hidden;
-        background-color: #ddd;
     }
 
 `;
@@ -130,5 +125,9 @@ export const Item__purchase = styled.div`
     color: #757575;
 `;
 export const Middle__banner = styled.div`
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 80px;
+    }
 `;

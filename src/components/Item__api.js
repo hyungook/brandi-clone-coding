@@ -13,11 +13,49 @@ const url = process.env.PUBLIC_URL + '/assets/item_thumnail/';
 const banner = process.env.PUBLIC_URL + '/assets/slideBanner/';
 
 
+
 class Item__api extends React.Component {
 
-    componentDidMount() {
-        console.log("hhh")
+
+componentDidMount() {
+
+    // infinite scroll 기능 추가
+    console.clear();
+    let page = 1;
+
+    function createItem() {
+        // 왜 함수안에 있어야 할까? 
+        const itemSection = document.querySelector('.item__section');
+        console.log(itemSection);
+
+        // let divBox = document.createElement('div');
+        // divBox.classList.add('divBox');
+        // itemSection.appendChild(divBox);
+        // divBox.style.width = `100px`;
+        // divBox.style.height = `100px`;
+        // divBox.style.backgroundColor = `black`;    
+
+
     }
+
+    window.addEventListener('scroll', () => {
+        const scrollHeight = document.documentElement.scrollHeight;
+        const scrollTop = document.documentElement.scrollTop;
+        const clientHeight = document.documentElement.clientHeight;
+        
+        if (scrollTop + clientHeight >= scrollHeight) {
+            console.log(page)
+            page++;
+            createItem();
+            return;
+        }
+
+    })
+
+
+
+}
+    
 
     render() {
 
@@ -65,9 +103,11 @@ class Item__api extends React.Component {
                 })} */}
             </Item__section__ul>
 
+
             <Middle__banner className={"banner"} alt={"banner image"}>
                 <img src={`${banner}banner15.png`} alt={item.alt}></img>
             </Middle__banner>
+
 
             <Item__section__ul className={"item__section__ul"}>
                 {item.map((item, idx) => {

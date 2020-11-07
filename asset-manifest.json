@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/brandi-clone-coding/static/css/main.333b1181.chunk.css",
+    "main.js": "/brandi-clone-coding/static/js/main.7a0393a1.chunk.js",
+    "main.js.map": "/brandi-clone-coding/static/js/main.7a0393a1.chunk.js.map",
+    "runtime-main.js": "/brandi-clone-coding/static/js/runtime-main.fc9b4167.js",
+    "runtime-main.js.map": "/brandi-clone-coding/static/js/runtime-main.fc9b4167.js.map",
+    "static/css/2.a19f8167.chunk.css": "/brandi-clone-coding/static/css/2.a19f8167.chunk.css",
+    "static/js/2.cc2c2e73.chunk.js": "/brandi-clone-coding/static/js/2.cc2c2e73.chunk.js",
+    "static/js/2.cc2c2e73.chunk.js.map": "/brandi-clone-coding/static/js/2.cc2c2e73.chunk.js.map",
+    "index.html": "/brandi-clone-coding/index.html",
+    "static/css/2.a19f8167.chunk.css.map": "/brandi-clone-coding/static/css/2.a19f8167.chunk.css.map",
+    "static/css/main.333b1181.chunk.css.map": "/brandi-clone-coding/static/css/main.333b1181.chunk.css.map",
+    "static/js/2.cc2c2e73.chunk.js.LICENSE.txt": "/brandi-clone-coding/static/js/2.cc2c2e73.chunk.js.LICENSE.txt",
+    "static/media/top__banner.c4f82727.png": "/brandi-clone-coding/static/media/top__banner.c4f82727.png",
+    "static/media/top__banner_mobile.87bd24eb.png": "/brandi-clone-coding/static/media/top__banner_mobile.87bd24eb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc9b4167.js",
+    "static/css/2.a19f8167.chunk.css",
+    "static/js/2.cc2c2e73.chunk.js",
+    "static/css/main.333b1181.chunk.css",
+    "static/js/main.7a0393a1.chunk.js"
+  ]
+}

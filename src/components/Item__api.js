@@ -33,7 +33,7 @@ componentDidMount() {
         const clientHeight = document.documentElement.clientHeight;
         
         if (scrollTop + clientHeight >= scrollHeight) {
-            console.log(scrollTop)
+            // console.log(scrollTop)
 
             if(this.state.page === 5) return;
 
@@ -70,10 +70,13 @@ componentDidMount() {
                 })} */}
 
 
-
                 {/* 최상위 section은 10개만 */}
                 {/* {itemList.map((item, idx) => { */}
+
                 {item.map((item, idx) => {
+
+                    // console.log(item.price)
+
                     return <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
                         <Item__img className={"item__img"}>
                             <Item__img__img src={`${url+item["img"]}`} alt={item.alt}></Item__img__img>

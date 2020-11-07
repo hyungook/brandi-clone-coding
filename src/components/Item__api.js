@@ -46,7 +46,6 @@ componentDidMount() {
 }
 
 
-
     render() {
         // console.log(this.state.page)
         const { itemList } = this.state
@@ -70,8 +69,6 @@ componentDidMount() {
                         </a></li>
                 })} */}
 
-
-                {/* 스텝, 1단계 ex 20개 등등 */}
 
 
                 {/* 최상위 section은 10개만 */}
@@ -97,8 +94,11 @@ componentDidMount() {
             </Item__section__ul>
 
 
+            {/* 배너 이미지 랜덤 변경 */}
+
             <Middle__banner className={"banner"} alt={"banner image"}>
-                <img src={`${banner}banner15.png`} alt={item.alt}></img>
+                {/* <img src={`${banner}banner15.png`} alt={item.alt}></img> */}
+                <img src={`${banner}`+`banner${Math.floor( Math.random() * 20 )}.png`} alt={item.alt}></img>
             </Middle__banner>
 
             

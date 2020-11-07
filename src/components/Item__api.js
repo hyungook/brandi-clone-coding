@@ -16,49 +16,40 @@ const banner = process.env.PUBLIC_URL + '/assets/slideBanner/';
 
 class Item__api extends React.Component {
 
-
-componentDidMount() {
-
-    // infinite scroll 기능 추가
-    console.clear();
-    let page = 1;
-
-    function createItem() {
-        // 왜 함수안에 있어야 할까? 
-        const itemSection = document.querySelector('.item__section');
-        console.log(itemSection);
-
-        // let divBox = document.createElement('div');
-        // divBox.classList.add('divBox');
-        // itemSection.appendChild(divBox);
-        // divBox.style.width = `100px`;
-        // divBox.style.height = `100px`;
-        // divBox.style.backgroundColor = `black`;    
-
-
+    // 초기 설정값
+    constructor(props){
+        super(props)
+        this.state = {
+            page:0,
+            itemList: item
+        }
     }
 
+componentDidMount() {
+   
     window.addEventListener('scroll', () => {
         const scrollHeight = document.documentElement.scrollHeight;
         const scrollTop = document.documentElement.scrollTop;
         const clientHeight = document.documentElement.clientHeight;
         
         if (scrollTop + clientHeight >= scrollHeight) {
-            console.log(page)
-            page++;
-            createItem();
-            return;
+            console.log(scrollTop)
+
+            if(this.state.page === 5) return;
+
+            this.setState({
+                page: this.state.page + 1,
+                itemList : this.state.itemList.concat(item)
+            })
         }
-
     })
-
-
-
 }
-    
+
+
 
     render() {
-
+        // console.log(this.state.page)
+        const { itemList } = this.state
         return <Item__wrap>
         <Item__wrap__h1>당신을 위한 추천</Item__wrap__h1>
         <Item__section className={"item__section"}>
@@ -83,6 +74,8 @@ componentDidMount() {
                 {/* 스텝, 1단계 ex 20개 등등 */}
 
 
+                {/* 최상위 section은 10개만 */}
+                {/* {itemList.map((item, idx) => { */}
                 {item.map((item, idx) => {
                     return <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
                         <Item__img className={"item__img"}>
@@ -108,9 +101,9 @@ componentDidMount() {
                 <img src={`${banner}banner15.png`} alt={item.alt}></img>
             </Middle__banner>
 
-
+            
             <Item__section__ul className={"item__section__ul"}>
-                {item.map((item, idx) => {
+                {itemList.map((item, idx) => {
                     return <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
                         <Item__img className={"item__img"}>
                             <Item__img__img src={`${url+item["img"]}`} alt={item.alt}></Item__img__img>

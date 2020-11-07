@@ -10,7 +10,9 @@ export const item = [
         sale: "",
         price: "9,100",
         costPrice: "",
-        purchase: "5,170개 구매중"},
+        purchase: "5,170개 구매중",
+        no : "1",
+        score : "4.5"},
     {
         url : "#", 
         img : "에이비글.jpg",
@@ -20,7 +22,9 @@ export const item = [
         sale: "10%",
         price: "13,230",
         costPrice: "14,700",
-        purchase: "868개 구매중"},
+        purchase: "868개 구매중",
+        no : "2",
+        score : "4.7"},
 
     { 
         url : "#", 
@@ -31,7 +35,9 @@ export const item = [
         sale: "5%",
         price: "46,360",
         costPrice: "48,800",
-        purchase: "198개 구매중"},
+        purchase: "198개 구매중",
+        no : "3",
+        score : "4.3"},
 
     { 
         url : "#", 
@@ -42,7 +48,9 @@ export const item = [
         sale: "",
         price: "9,800",
         costPrice: "",
-        purchase: "3,904개 구매중"},
+        purchase: "3,904개 구매중",
+        no : "4",
+        score : "4.4"},
 
     { 
         url : "#", 
@@ -53,7 +61,9 @@ export const item = [
         sale: "",
         price: "9,800",
         costPrice: "",
-        purchase: "756개 구매중"},
+        purchase: "756개 구매중",
+        no : "5",
+        score : "4.6"},
 
     { 
         url : "#", 
@@ -64,7 +74,9 @@ export const item = [
         sale: "10%",
         price: "32,400",
         costPrice: "36,000",
-        purchase: "108개 구매중"},
+        purchase: "108개 구매중",
+        no : "6",
+        score : "4.7"},
 
     { 
         url : "#", 
@@ -75,7 +87,9 @@ export const item = [
         sale: "10%",
         price: "14,310",
         costPrice: "15,900",
-        purchase: ""},
+        purchase: "",
+        no : "7",
+        score : "4.5"},
     { 
         url : "#", 
         img : "원더원더.jpg",
@@ -85,7 +99,9 @@ export const item = [
         sale: "",
         price: "7,400",
         costPrice: "",
-        purchase: "1,323개 구매중"},
+        purchase: "1,323개 구매중",
+        no : "8",
+        score : "4.6"},
     { 
         url : "#", 
         img : "더뮤즈.jpg",
@@ -95,7 +111,9 @@ export const item = [
         sale: "",
         price: "9,900",
         costPrice: "",
-        purchase: "631개 구매중"},
+        purchase: "631개 구매중",
+        no : "9",
+        score : "4.8"},
     { 
         url : "#", 
         img : "비커밍27.jpg",
@@ -105,7 +123,9 @@ export const item = [
         sale: "10%",
         price: "20,660",
         costPrice: "22,950",
-        purchase: "454개 구매중"}
+        purchase: "454개 구매중",
+        no : "10",
+        score : "4.7"}
 ]
 
 // export const item = [{1:1},{1:2},{1:3},{1:4}]

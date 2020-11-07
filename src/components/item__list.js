@@ -3,7 +3,7 @@ import React from 'react';
 export const item = [
     {
         url : "#", 
-        img : "버튼나인2.jpg",
+        img : "버튼나인.jpg",
         alt : "thumnail image",
         brand : "버튼나인",
         title : "(후기인증)오리지널 크롭 반팔티(5color)_버튼나인",
@@ -80,7 +80,7 @@ export const item = [
 
     { 
         url : "#", 
-        img : "다온샵2.jpg",
+        img : "다온샵.jpg",
         alt : "thumnail image",
         brand : "다온샵",
         title : "(f.w버전) 빅사이즈/속기모/만족감100% 따뜻!!롱한핏감 구김적은 고급폴리소재!!",

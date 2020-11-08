@@ -76,8 +76,15 @@ componentDidMount() {
                 {item.map((item, idx) => {
 
                     // console.log(item.price)
+                    console.log(item[4])
+                    // let re = item.no >= 4;
+                    // console.log(re)
+                    if(item.no <= 5) {
+                        // console.log(item.brand)
+                    }
+                    // item.no <= 5 && console.log(item.brand)
 
-                    return <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
+                    return item.no <= 15 && <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
                         <Item__img className={"item__img"}>
                             <Item__img__img src={`${url+item["img"]}`} alt={item.alt}></Item__img__img>
                         </Item__img>

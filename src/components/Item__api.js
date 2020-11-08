@@ -13,7 +13,6 @@ const url = process.env.PUBLIC_URL + '/assets/item_thumnail/';
 const banner = process.env.PUBLIC_URL + '/assets/slideBanner/';
 
 
-
 class Item__api extends React.Component {
 
     // 초기 설정값
@@ -21,12 +20,23 @@ class Item__api extends React.Component {
         super(props)
         this.state = {
             page:0,
-            itemList: item
+            itemList: item,
+            topList: item.score,
         }
     }
 
 componentDidMount() {
-   
+
+    //const sortedList = ??
+
+    // this.state.itemList.map(item => {
+    //     let topList = {};
+    //     topList[item.score] = item.score;
+    //     return topList;
+    // })
+
+    // console.log(topList)
+
     window.addEventListener('scroll', () => {
         const scrollHeight = document.documentElement.scrollHeight;
         const scrollTop = document.documentElement.scrollTop;
@@ -75,16 +85,9 @@ componentDidMount() {
 
                 {item.map((item, idx) => {
 
-                    // console.log(item.price)
-                    console.log(item[4])
-                    // let re = item.no >= 4;
-                    // console.log(re)
-                    if(item.no <= 5) {
-                        // console.log(item.brand)
-                    }
-                    // item.no <= 5 && console.log(item.brand)
+                    // console.log(item[4])  // map 안에서는 xx
 
-                    return item.no <= 15 && <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
+                    return parseFloat(item.score) > 4.5*1 && <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
                         <Item__img className={"item__img"}>
                             <Item__img__img src={`${url+item["img"]}`} alt={item.alt}></Item__img__img>
                         </Item__img>

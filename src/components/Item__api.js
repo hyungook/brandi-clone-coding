@@ -21,21 +21,22 @@ class Item__api extends React.Component {
         this.state = {
             page:0,
             itemList: item,
-            topList: item.score,
+            topList: [],
         }
     }
 
 componentDidMount() {
+    
+    let topListArray = this.state.itemList.filter(item => {
+        return item.score >= 4.6
+    })
 
-    //const sortedList = ??
+    // console.log(topListArray)
 
-    // this.state.itemList.map(item => {
-    //     let topList = {};
-    //     topList[item.score] = item.score;
-    //     return topList;
-    // })
+    this.setState({
+        topList: topListArray.slice(0,10)
+    })
 
-    // console.log(topList)
 
     window.addEventListener('scroll', () => {
         const scrollHeight = document.documentElement.scrollHeight;
@@ -57,8 +58,8 @@ componentDidMount() {
 
 
     render() {
-        // console.log(this.state.page)
-        const { itemList } = this.state
+        //console.log(this.state.topList)
+        const { itemList, topList } = this.state
         return <Item__wrap>
         <Item__wrap__h1>당신을 위한 추천</Item__wrap__h1>
         <Item__section className={"item__section"}>
@@ -83,11 +84,9 @@ componentDidMount() {
                 {/* 최상위 section은 10개만 */}
                 {/* {itemList.map((item, idx) => { */}
 
-                {item.map((item, idx) => {
+                {topList.map((item, idx) => {
 
-                    // console.log(item[4])  // map 안에서는 xx
-
-                    return parseFloat(item.score) > 4.5*1 && <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
+                    return <Item__section__li><Item__li__a href={item["url"]} target={"blank"}>
                         <Item__img className={"item__img"}>
                             <Item__img__img src={`${url+item["img"]}`} alt={item.alt}></Item__img__img>
                         </Item__img>
